@@ -1,0 +1,6 @@
+name=Waternet
+author=Willems Davy aka Joyrider3774
+description=A puzzle game where you fill water into waterpipes by sliding or rotating pipes.
+bundleID=com.joyrider3774.waternet
+version=1.0
+imagePath=metadata
