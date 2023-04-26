@@ -319,17 +319,22 @@ void titleScreen(void)
                 switch(option)
                 {
                     case opMusic:
+					{
                         setMusicOn(!isMusicOn());
                         setMusicOnSaveState(isMusicOn());                       
                         pd->system->setMenuItemValue(musicOptionMenuItem, isMusicOnSaveState());                        
                         needRedraw = 1;
                         break;
+					}
                     case opSound:
+					{
                         setSoundOn(!isSoundOn());;
                         setSoundOnSaveState(isSoundOn());
                         needRedraw = 1;
                         break;
+					}
                     case opSkin:
+					{
                         int i = skinSaveState();
                         i++;
                         if (i == maxSkins)
@@ -339,11 +344,14 @@ void titleScreen(void)
                         setBlockTilesAsBackground();
                         needRedraw = 1;
                         break;
+					}
                     case opInverted:
+					{
                         setInvertedSaveState(!isInvertedSaveState());
                         setInverted(isInvertedSaveState());                        
                         needRedraw = 1;
                         break;
+					}
                 }
             }
         }
