@@ -8,7 +8,7 @@ jobs:
     strategy:
       matrix:
         include:
-          - { pdx: Formula1.pdx, env: playdate }
+          - { pdx: Waternet.pdx, env: playdate }
           
     runs-on: ubuntu-latest       
     steps:
