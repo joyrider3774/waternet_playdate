@@ -1,4 +1,6 @@
 # Waternet Playdate Version
+![DownloadCountTotal](https://img.shields.io/github/downloads/joyrider3774/waternet_playdate/total?label=total%20downloads&style=plastic) ![DownloadCountLatest](https://img.shields.io/github/downloads/joyrider3774/waternet_playdate/latest/total?style=plastic) ![LatestVersion](https://img.shields.io/github/v/tag/joyrider3774/waternet_playdate?label=Latest%20version&style=plastic) ![License](https://img.shields.io/github/license/joyrider3774/waternet_playdate?style=plastic)
+
 Waternet is a multiplatform puzzle game written for old consoles and handhelds like Game Boy (Color), Game Gear, Master System, Analogue Pocket and Mega Duck and now also Playdate !
 
 ## Playdate Game Features:
