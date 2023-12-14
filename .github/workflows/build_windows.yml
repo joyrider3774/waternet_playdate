@@ -10,16 +10,19 @@ jobs:
         include:
           - { sys: mingw64, env: x86_64 }
           - { sys: mingw32, env: i686 }
+
     runs-on: windows-latest    
     steps:
       - name: Checkout Playdate SDL2 Api Sources
         uses: actions/checkout@v3
         with:
           repository: 'joyrider3774/Playdate_Api_SDL2'
+
       - name: Checkout sources
         uses: actions/checkout@v3
         with:
           path: tmp
+
       - name: Setup Msys
         uses: msys2/setup-msys2@v2
         with:
@@ -37,13 +40,14 @@ jobs:
             mingw-w64-${{matrix.env}}-freetype
             mingw-w64-${{matrix.env}}-libwebp
             mingw-w64-${{matrix.env}}-libtiff
+
       - name: move things to correct directories
         shell: msys2 {0}
         run: |
           rm -rf ./src/srcgame
-          rm -rf ./Source
-          mv tmp/Source ./Source
-          mv tmp/src ./src/srcgame                
+          mv tmp/src ./src/srcgame
+          cp -Rf tmp/Source/. ./Source
+          
       - name: Build Game
         shell: msys2 {0}
         run: |
@@ -83,6 +87,7 @@ jobs:
           cp /${{matrix.sys}}/bin/SDL2*.dll Source/
           cp /${{matrix.sys}}/bin/libsharpyuv*.dll Source/
           cp /${{matrix.sys}}/bin/libwinpthread*.dll Source/
+
       - name: Store build
         uses: actions/upload-artifact@v3
         with:
