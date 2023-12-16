@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
 
 env:
-  ARTIFACT_NAME: Dynamate playdate Html
+  ARTIFACT_NAME: Waternet playdate Html
   
 
 jobs:
