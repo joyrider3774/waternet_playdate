@@ -69,6 +69,38 @@ void preloadImages(void)
     congratsScreenTiles = loadBitmapTableAtPath("images/congratstiles");
 }
 
+void unloadImages()
+{
+    pd->graphics->freeBitmap(titlescreenMap);
+	pd->graphics->freeBitmap(congratsMap);
+    pd->graphics->freeBitmapTable(blockTiles);
+    pd->graphics->freeBitmapTable(blockTiles2);
+    pd->graphics->freeBitmapTable(blockTiles3);
+    pd->graphics->freeBitmapTable(blockTiles4);
+    pd->graphics->freeBitmapTable(blockTiles5);
+    pd->graphics->freeBitmapTable(blockTiles6);
+    pd->graphics->freeBitmapTable(blockTiles7);
+    pd->graphics->freeBitmapTable(blockTiles8);
+    pd->graphics->freeBitmapTable(blockTiles9);
+    pd->graphics->freeBitmapTable(blockTiles10);
+    pd->graphics->freeBitmapTable(blockTiles11);
+    pd->graphics->freeBitmapTable(blockTiles12);
+    pd->graphics->freeBitmapTable(blockTiles13);
+    pd->graphics->freeBitmapTable(blockTiles14);
+    pd->graphics->freeBitmapTable(blockTiles15);
+    pd->graphics->freeBitmapTable(blockTiles16);
+    pd->graphics->freeBitmapTable(blockTiles17);
+    pd->graphics->freeBitmapTable(blockTiles18);
+    pd->graphics->freeBitmapTable(blockTiles19);
+    pd->graphics->freeBitmapTable(blockTiles20);
+    pd->graphics->freeBitmapTable(blockTiles21);
+    pd->graphics->freeBitmapTable(blockTiles22);
+    pd->graphics->freeBitmapTable(blockTiles23);
+    pd->graphics->freeBitmapTable(blockTiles24);
+    pd->graphics->freeBitmapTable(selectorTiles);
+    pd->graphics->freeBitmapTable(congratsScreenTiles);
+}
+
 void MenuItemCallback(void* userdata)
 {
     int skin = pd->system->getMenuItemValue(SkinOptionMenuItem);
@@ -122,7 +154,16 @@ void setupGame(void)
     pd->system->setMenuItemValue(SkinOptionMenuItem, skinSaveState());
     const char* InvertedOptions[] = { "Normal", "Inverted" };
     InvertedColorsOptionMenuItem = pd->system->addOptionsMenuItem("Colors", InvertedOptions, 2, MenuItemCallback, NULL);
-    pd->system->setMenuItemValue(InvertedColorsOptionMenuItem, isInvertedSaveState());
+	pd->graphics->setBackgroundColor(kColorBlack);	
+	pd->system->setMenuItemValue(InvertedColorsOptionMenuItem, isInvertedSaveState());
+}
+
+void terminateGame(void)
+{
+	unloadImages();
+	deInitSound();
+	deInitMusic();
+	pd->system->removeAllMenuItems();
 }
 
 // main update function

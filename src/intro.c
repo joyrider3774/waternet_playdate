@@ -13,6 +13,7 @@ int ay;
 
 void initIntro(void)
 {
+	frames = 0;
     setBlockTilesAsBackground();
     ay = pd->display->getHeight();
 }

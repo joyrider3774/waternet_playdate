@@ -87,6 +87,23 @@ void initSound(void)
     menuAcknowledge = loadSoundFile("sound/menuacknowledge");
 }
 
+void deInitSound(void)
+{
+	pd->sound->fileplayer->stop(gameMoveSound);
+    pd->sound->fileplayer->stop(errorSound);
+    pd->sound->fileplayer->stop(menuSelectSound);
+    pd->sound->fileplayer->stop(menuBackSound);
+    pd->sound->fileplayer->stop(gameAction);
+    pd->sound->fileplayer->stop(menuAcknowledge);
+
+    pd->sound->fileplayer->freePlayer(gameMoveSound);
+    pd->sound->fileplayer->freePlayer(errorSound);
+    pd->sound->fileplayer->freePlayer(menuSelectSound);
+    pd->sound->fileplayer->freePlayer(menuBackSound);
+    pd->sound->fileplayer->freePlayer(gameAction);
+    pd->sound->fileplayer->freePlayer(menuAcknowledge);
+}
+
 void playMusicFile(const char* path, int repeat)
 {
     if(pd->sound->fileplayer->isPlaying(musicPlayer))
@@ -142,6 +159,13 @@ void initMusic(void)
     pd->sound->fileplayer->setVolume(musicPlayer, 1.0f, 1.0f);
     pd->sound->fileplayer->setRate(musicPlayer, 1.0f);
 }
+
+void deInitMusic(void)
+{
+	pd->sound->fileplayer->stop(musicPlayer);
+	pd->sound->fileplayer->freePlayer(musicPlayer);
+}
+
 
 void playSound(FilePlayer* soundPlayer)
 {
