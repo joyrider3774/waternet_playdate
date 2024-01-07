@@ -51,7 +51,8 @@ jobs:
       - name: Build Game
         shell: msys2 {0}
         run: |
-          make
+          make WINDOWSCALE=2
+
       - name: Copy dll libraries
         shell: msys2 {0}
         run: |
