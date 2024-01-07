@@ -16,6 +16,11 @@ Waternet is a multiplatform puzzle game written for old consoles and handhelds l
 ## Playing the Game:
 The aim of the game, in any game mode is always to connect all pipes so that water can flow through them from the water point source. How you can accomplish this depends on the game mode. The game has a help section in the main menu where you can always check up on the rules of each game mode. The game has 375 levels, spread over 3 game mode each with 5 difficulties, so thats 25 levels per difficulty / game mode. To top that off the game also provides a random difficulty which will generate never ending, random levels for the game mode you had chosen.
 
+## Play version with colored graphics
+The windows, mac, (self build) linux and html (web assembly) versions can switch out the default playdate graphics with colored graphics if you press the F3 button on the keyboard or the X Button on your (xbox) gamepad. 
+The game will restart with the next source folder and remember which source folder you are using the next time you start the game.
+
+
 ## Controls 
 | Button | Action |
 | ------ | ------ |
@@ -30,7 +35,12 @@ The aim of the game, in any game mode is always to connect all pipes so that wat
 | X | Confirm in menu and level selector, rotate or slide action while playing |
 | C | Back in menu, level selector and game |
 | F | Switch between fullscreen & windowed mode |
+| F3 | Switch Source Folders (switch between playdate and colored graphics) |
 | F4 | Quit game |
+| F5 | Dock Crank |
+| F6 | Undock Crank |
+| F7 | Hold to move Crank backwards, previous piece |
+| F8 | Hold to move Crank forwards, next piece |
 
 ## Controls Windows (Gamepad)
 | Button | Action |
@@ -38,6 +48,11 @@ The aim of the game, in any game mode is always to connect all pipes so that wat
 | dpad & joystick | Select menu's, options or levels to play. During gameplay move the selector tile around. |
 | A Button | Confirm in menu and level selector, rotate or slide action while playing |
 | B Button | Back in menu, level selector and game |
+| X Button | Switch Source Folders (switch between playdate and colored graphics) |
+| LT | Dock Crank |
+| RT | Undock Crank |
+| LB | Hold to move Crank backwards, previous piece |
+| RB | Hold to move Crank forwards, next piece |
 
 ## Rotate Mode
 You need to connect all the pipes so water flows through them, by pressing the A button on a pipe, to rotate the single pipe.
