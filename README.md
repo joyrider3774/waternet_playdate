@@ -21,7 +21,8 @@ The windows, mac, (self build) linux and html (web assembly) versions can switch
 The game will restart with the next source folder and remember which source folder you are using the next time you start the game.
 
 
-## Controls 
+## Controls
+
 | Button | Action |
 | ------ | ------ |
 | Dpad or Crank | Select menu's, options or levels to play. During gameplay move the selector tile around. The crank in slide mode will only move around the arrow keys so you can quickly slide in the correct direction by pressing the (A)ction button, in other game modes it will loop through all possible selections. |
@@ -29,6 +30,7 @@ The game will restart with the next source folder and remember which source fold
 | B | Back in menu, level selector and game |
 
 ## Controls Windows (keyboard)
+
 | Key | Action |
 | ------ | ------ |
 | Arrow keys | Select menu's, options or levels to play. During gameplay move the selector tile around. |
@@ -43,6 +45,7 @@ The game will restart with the next source folder and remember which source fold
 | F8 | Hold to move Crank forwards, next piece |
 
 ## Controls Windows (Gamepad)
+
 | Button | Action |
 | ------ | ------ |
 | dpad & joystick | Select menu's, options or levels to play. During gameplay move the selector tile around. |
