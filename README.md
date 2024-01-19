@@ -16,6 +16,18 @@ Waternet is a multiplatform puzzle game written for old consoles and handhelds l
 ## Playing the Game:
 The aim of the game, in any game mode is always to connect all pipes so that water can flow through them from the water point source. How you can accomplish this depends on the game mode. The game has a help section in the main menu where you can always check up on the rules of each game mode. The game has 375 levels, spread over 3 game mode each with 5 difficulties, so thats 25 levels per difficulty / game mode. To top that off the game also provides a random difficulty which will generate never ending, random levels for the game mode you had chosen.
 
+## Game Modes
+The Game has 3 game modes
+
+### Rotate Mode
+You need to connect all the pipes so water flows through them, by pressing the A button on a pipe, to rotate the single pipe.
+
+### Slide Mode
+You need to connect all the pipes so water flows through them, by pressing the A  button on the arrows of a row or column. The row or column will move all pipes in the direction the arrow is pointing at.
+
+### Roslid Mode
+You need to connect all the pipes so water flows through them, by pressing the A button on the arrows of a row or column. The row or column will move all pipes in the direction the arrow is pointing at. You can also press the A button on a pipe, to rotate the single pipe. This is a combination Rotate and Slide mode.
+
 ## Play version with colored graphics
 The windows, mac, (self build) linux and html (web assembly) versions can switch out the default playdate graphics with colored graphics if you press the F3 button on the keyboard or the X Button on your (xbox) gamepad. 
 The game will restart with the next source folder and remember which source folder you are using the next time you start the game.
@@ -57,11 +69,7 @@ The game will restart with the next source folder and remember which source fold
 | LB | Hold to move Crank backwards, previous piece |
 | RB | Hold to move Crank forwards, next piece |
 
-## Rotate Mode
-You need to connect all the pipes so water flows through them, by pressing the A button on a pipe, to rotate the single pipe.
-
-## Slide Mode
-You need to connect all the pipes so water flows through them, by pressing the A  button on the arrows of a row or column. The row or column will move all pipes in the direction the arrow is pointing at.
-
-## Roslid Mode
-You need to connect all the pipes so water flows through them, by pressing the A button on the arrows of a row or column. The row or column will move all pipes in the direction the arrow is pointing at. You can also press the A button on a pipe, to rotate the single pipe. This is a combination Rotate and Slide mode.
+## Credits
+The Game Concept is based on net and netslide games from the [simon tatham's puzzle collections](https://www.chiark.greenend.org.uk/~sgtatham/puzzles/)
+Source2 folder contains a skin based on the "FP_Aquaeduct" skin from the gp2x colored version created by Fusion Power
+Source3 folder contains a skin based on the "FP_Brixx" skin from the gp2x colored version, which was a small tribute to Sonic 2 "Emerald Hill" Stage and also created by Fusion Power
